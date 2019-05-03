@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    ViewSet
                 </div>
 
                 <div class="links">
