@@ -16,25 +16,25 @@ steps:
   args:
   - 'ps'
 
-- id: "Running migrations"
-  name: 'gcr.io/cloud-builders/docker'
-  args:
-  - 'exec'
-  - '-t'
-  - 'app'
-  - 'php'
-  - '/var/www/artisan'
-  - 'migrate'
+# - id: "Running migrations"
+#   name: 'gcr.io/cloud-builders/docker'
+#   args:
+#   - 'exec'
+#   - '-t'
+#   - 'app'
+#   - 'php'
+#   - '/var/www/artisan'
+#   - 'migrate'
 
-- id: "Running db seeds"
-  name: 'gcr.io/cloud-builders/docker'
-  args:
-  - 'exec'
-  - '-t'
-  - 'app'
-  - 'php'
-  - '/var/www/artisan'
-  - 'db:seed'
+# - id: "Running db seeds"
+#   name: 'gcr.io/cloud-builders/docker'
+#   args:
+#   - 'exec'
+#   - '-t'
+#   - 'app'
+#   - 'php'
+#   - '/var/www/artisan'
+#   - 'db:seed'
 
 - id: "Running tests"
   name: 'gcr.io/cloud-builders/docker'
